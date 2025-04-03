@@ -12,25 +12,14 @@
   environment.systemPackages = with pkgs; [
     # GUI apps
     kitty
-    # vscode MUST BE DECLARED IN HOME MANAGER
-    inputs.zen-browser.packages."${system}".default # zen
+    firefox
     nautilus
     wofi
     obsidian
-    #chromium # For backup
-    easyeffects # Shortcut for 
-    rhythmbox # eliminate? yes
-
-    # zsh rice it asap please
-    zsh
     
     # Utility apps and tools
     git
     neofetch
     btop
-    gcc
-    gnumake
-    bun
-    nodejs_23
   ];
 }

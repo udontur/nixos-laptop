@@ -5,7 +5,6 @@
     hyprpaper
     swayosd
     swaynotificationcenter
-    hyprpicker
     hyprland
     hyprcursor
     hyprshot
@@ -26,16 +25,13 @@
       # Apps
       bind = SUPER, Q, exec, kitty
       bind = SUPER, E, exec, nautilus
-      bind = SUPER_Shift, E, exec, easyeffects
-      bind = SUPER, F, exec, zen
+      bind = SUPER, F, exec, firefox
       bindr = SUPER, SUPER_L, exec, pkill wofi || wofi -a --normal-window --show drun --allow-images
+      bindl = ,switch:Lid Switch, exec, hyprlock
       bind = SUPER, L, exec, hyprlock
       bind = SUPER, S, exec, hyprshot -m region output -z --clipboard-only
       bind = SUPER_Shift, S, exec, hyprshot -m -z region
       bindr = SUPER, B, exec, pkill btop || kitty --title btop -e btop
-      bind = SUPER, C, exec, hyprpicker -a -f hex
-      bind = SUPER, V, exec, code
-      bind = SUPER, M, exec, rhythm-box
 
       # Windows and Workspace
       bind = SUPER_Control, right, exec, hyprnome
@@ -65,11 +61,9 @@
       # Launch
       exec-once = hyprpaper
       exec-once = swayosd-server
-      exec-once = zen
+      exec-once = firefox
       exec-once = swaync
-      # exec-once = nohup easyeffects --gapplication-service
       exec-once = hyprctl setcursor Bibata-Modern-Ice 25
-      exec-once = systemctl --user start hyprpolkitagent
 
       # Environment Variables
       env = XCURSOR_THEME, Bibata-Modern-Ice
@@ -82,8 +76,7 @@
       env = QT_QPA_PLATFORMTHEME,qt5ct
 
       # Monitors
-      monitor=DP-2, 1920x1080@144, 0x0, 1
-      monitor=DP-1, 2560x1440@165, 1920x0, 1.25
+      monitor=eDP-1, 1920x1200@60, 0x0, 1.25
 
       # Window Rule
       windowrulev2 = size 1300 750, title:btop
@@ -143,15 +136,22 @@
           disable_hyprland_logo = true
           disable_splash_rendering = true
       }
+      gestures{
+        workspace_swipe=false
+      }
       input {
           kb_layout = us
           kb_options = 
           follow_mouse = 1
           sensitivity = 0
+          touchpad{
+            natural_scroll=true
+            scroll+factor=0.15
+          }
       }
       device{
-          name=razer-razer-viper
-          sensitivity=-0.7
+          name=syna0680:00-06cb:ce44-touchpad
+          sensitivity=-0.2
       }
       xwayland {
           force_zero_scaling = true
