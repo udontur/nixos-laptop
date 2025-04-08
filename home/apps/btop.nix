@@ -27,6 +27,14 @@
       graph_symbol_proc = "default";
       shown_boxes = "cpu proc mem net"; # gpu does not work!!!
       update_ms = 500;
+#* Show battery stats in top right if battery is present.
+show_battery = true;
+
+#* Which battery to use if multiple are present. "Auto" for auto detection.
+selected_battery = "BAT1";
+
+#* Show power stats of battery next to charge indicator.
+show_battery_watts = true;
       proc_sorting = "cpu lazy";
       proc_reversed = false;
       proc_tree = true;
@@ -76,9 +84,6 @@
       net_auto = true;
       net_sync = true;
       net_iface = "";
-      show_battery = false;
-      selected_battery = "";
-      show_battery_watts = true;
       log_level = "WARNING";
       nvml_measure_pcie_speeds = false;
       gpu_mirror_graph = false;

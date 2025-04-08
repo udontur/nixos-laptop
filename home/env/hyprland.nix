@@ -8,6 +8,7 @@
     hyprland
     hyprcursor
     hyprshot
+	hyprlock
     hyprnome
     xdg-desktop-portal-hyprland
     hyprpolkitagent
@@ -52,12 +53,15 @@
       bindel = ,XF86AudioRaiseVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%+
       bindel = ,XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%-
       bindel = ,XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
-
+	bindel = ,XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
+bindel = ,XF86MonBrightnessUp, exec, brightnessctl s 1%+
+bindel = ,XF86MonBrightnessDown, exec, brightnessctl s 1%-
       # SwayOSD
       bind = ,XF86AudioRaiseVolume, exec, swayosd-client --output-volume +1 --max-volume 150
       bind = ,XF86AudioLowerVolume, exec, swayosd-client --output-volume -1 --max-volume 150
       bind = ,XF86AudioMute, exec, swayosd-client --output-volume mute-toggle
-
+bind = ,XF86MonBrightnessUp, exec, swayosd-client --brightness +1
+bind = ,XF86MonBrightnessDown, exec, swayosd-client --brightness -1
       # Launch
       exec-once = hyprpaper
       exec-once = swayosd-server
@@ -146,7 +150,7 @@
           sensitivity = 0
           touchpad{
             natural_scroll=true
-            scroll+factor=0.15
+            scroll_factor=0.15
           }
       }
       device{

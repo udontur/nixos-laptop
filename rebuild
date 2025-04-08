@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-sudo printf "NixOS Rebuilding... "
+sudo echo "NixOS Rebuilding... "
 
-git add .
+sudo git add .
 
 # Rebuild, output simplified errors, log trackebacks
-sudo nixos-rebuild switch --flake ~/nixos --impure &> nixos-switch.log || (cat nixos-switch.log | grep --color error && exit 1)
+sudo nixos-rebuild switch --flake ~/nixos-laptop --impure &> nixos-switch.log || (cat nixos-switch.log | grep --color error && exit 1)
 
 if [ $? -eq 1 ]; then
     echo "NixOS Failed to Rebuild."

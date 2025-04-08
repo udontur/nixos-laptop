@@ -11,6 +11,7 @@
     ./apps/wofi.nix
     ./env/sys-default.nix
     ./apps/btop.nix
+    ./apps/hyprlock.nix
   ];
 
   dconf.settings = {

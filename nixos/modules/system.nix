@@ -37,6 +37,8 @@
   networking.networkmanager.enable = true;
   networking.hostName = "nixos"; # Define your hostname.
   networking.firewall.enable = true;
+  # Battery Saver
+  services.tlp.enable = true;
 
   # Time and Language
   time.timeZone = "Asia/Hong_Kong";

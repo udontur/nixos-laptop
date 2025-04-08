@@ -20,6 +20,4 @@
   environment.systemPackages = with pkgs; [
     home-manager
   ];
-  programs.zsh.enable = true;
-  users.defaultUserShell = pkgs.zsh;
 }
