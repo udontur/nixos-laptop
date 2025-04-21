@@ -21,5 +21,7 @@
     git
     neofetch
     btop
+
+    rpi-imager
   ];
 }
