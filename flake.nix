@@ -8,6 +8,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     hyprland.url="github:hyprwm/Hyprland"; 
+    ossdmk.url="github:udontur/ossdmk";  
   };
 
   outputs = { self, nixpkgs, home-manager, hyprland, ... }@inputs: 

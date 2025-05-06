@@ -382,6 +382,40 @@
         "type": "github"
       }
     },
+    "nixpkgs_3": {
+      "locked": {
+        "lastModified": 1745391562,
+        "narHash": "sha256-sPwcCYuiEopaafePqlG826tBhctuJsLx/mhKKM5Fmjo=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "8a2f738d9d1f1d986b5a4cd2fd2061a7127237d7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "ossdmk": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_3"
+      },
+      "locked": {
+        "lastModified": 1745540928,
+        "narHash": "sha256-d2O7cPXcvTpO3AzHQ8xtQO7cAd08b78rxM/NjqNinIo=",
+        "owner": "udontur",
+        "repo": "ossdmk",
+        "rev": "c374f89e80fdf634619fe0c2e56e77c3ab4573df",
+        "type": "github"
+      },
+      "original": {
+        "owner": "udontur",
+        "repo": "ossdmk",
+        "type": "github"
+      }
+    },
     "pre-commit-hooks": {
       "inputs": {
         "flake-compat": "flake-compat",
@@ -409,7 +443,8 @@
       "inputs": {
         "home-manager": "home-manager",
         "hyprland": "hyprland",
-        "nixpkgs": "nixpkgs_2"
+        "nixpkgs": "nixpkgs_2",
+        "ossdmk": "ossdmk"
       }
     },
     "systems": {

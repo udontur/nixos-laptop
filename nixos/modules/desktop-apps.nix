@@ -15,13 +15,14 @@
     firefox
     nautilus
     wofi
-    obsidian
-    
+    yazi
+
     # Utility apps and tools
     git
     neofetch
     btop
-
-    rpi-imager
+    inputs.ossdmk.default
+    zip
+    unzip
   ];
 }
