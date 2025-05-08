@@ -8,7 +8,6 @@
     ./env/hyprland.nix
     ./cmd/git.nix
     ./apps/kitty.nix
-    ./apps/wofi.nix
     ./env/sys-default.nix
     ./apps/btop.nix
     ./apps/hyprlock.nix

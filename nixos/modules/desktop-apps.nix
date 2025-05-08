@@ -14,10 +14,8 @@
     kitty
     firefox
     nautilus
-    wofi
-    yazi
 
-    # Utility apps and tools
+    # Terminal apps
     git
     neofetch
     btop

@@ -8,7 +8,7 @@
     hyprland
     hyprcursor
     hyprshot
-	hyprlock
+    hyprlock
     hyprnome
     xdg-desktop-portal-hyprland
     hyprpolkitagent
@@ -27,7 +27,6 @@
       bind = SUPER, Q, exec, kitty
       bind = SUPER, E, exec, nautilus
       bind = SUPER, F, exec, firefox
-      bindr = SUPER, SUPER_L, exec, pkill wofi || wofi -a --normal-window --show drun --allow-images
       bindl = ,switch:Lid Switch, exec, hyprlock
       bind = SUPER, L, exec, hyprlock
       bind = SUPER, S, exec, hyprshot -m region output -z --clipboard-only
