@@ -79,7 +79,7 @@ bind = ,XF86MonBrightnessDown, exec, swayosd-client --brightness -1
       env = QT_QPA_PLATFORMTHEME,qt5ct
 
       # Monitors
-      monitor=eDP-1, 1920x1200@60, 0x0, 1.25
+      monitor=eDP-1, 1920x1200@60, 0x0, 1.25, mirror, HDMI-A-1
       
      # Window Rule
       windowrulev2 = size 1300 750, title:btop
