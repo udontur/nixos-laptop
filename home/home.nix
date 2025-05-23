@@ -10,7 +10,7 @@
     ./apps/kitty.nix
     ./apps/btop.nix
     ./apps/hyprlock.nix
-#    ./apps/waybar.nix
+    ./apps/waybar.nix
   ];
 
   dconf.settings = {

@@ -116,12 +116,14 @@
       border: 2px solid #89b4fa;
       }
     '';
-    settings = {
-mainBar{
+    settings = [{
       layer = "bottom";
       position = "top";
       height = 40;
       spacing = 2;
+      exclusive=true;
+      gtk-layer-shell= true;
+      fixed-center= true;
       passthrough = false;
       modules-left = [
         "hyprland/workspaces"
@@ -211,7 +213,6 @@ mainBar{
         return-type = "json";
         tooltip = false;
       };
-    };
+    }];
   };
-};
 }

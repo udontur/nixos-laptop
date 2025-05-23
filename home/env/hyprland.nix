@@ -20,8 +20,7 @@
       # System
       bind = SUPER, W, killactive,
       bind = SUPER, Delete, exec, reboot
-      bind = SUPER_Control, P, exec, shutdown now
-      #bind = SUPER, P, exit
+      bind = SUPER_Control, D, exec, shutdown now
 
       # Apps
       bind = SUPER, Q, exec, kitty
@@ -67,6 +66,7 @@ bind = ,XF86MonBrightnessDown, exec, swayosd-client --brightness -1
       exec-once = firefox
       exec-once = swaync
       exec-once = hyprctl setcursor Bibata-Modern-Ice 25
+      exec-once = waybar
 
       # Environment Variables
       env = XCURSOR_THEME, Bibata-Modern-Ice
