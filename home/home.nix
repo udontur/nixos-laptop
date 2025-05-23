@@ -8,9 +8,9 @@
     ./env/hyprland.nix
     ./cmd/git.nix
     ./apps/kitty.nix
-    ./env/sys-default.nix
     ./apps/btop.nix
     ./apps/hyprlock.nix
+#    ./apps/waybar.nix
   ];
 
   dconf.settings = {

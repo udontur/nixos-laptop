@@ -34,10 +34,10 @@
       bindr = SUPER, B, exec, pkill btop || kitty --title btop -e btop
 
       # Windows and Workspace
-      bind = SUPER_Control, right, exec, hyprnome
-      bind = SUPER_Control, left, exec, hyprnome --previous
-      bind = SUPER_Control_SHIFT, right, exec, hyprnome --move
-      bind = SUPER_Control_SHIFT, left, exec, hyprnome --previous --move
+      bind = SUPER, O, exec, hyprnome
+      bind = SUPER, I, exec, hyprnome --previous
+      bind = SUPER_Control, O, exec, hyprnome --move
+      bind = SUPER_Control, I, exec, hyprnome --previous --move
       bind = SUPER, left, movefocus, l
       bind = SUPER, right, movefocus, r
       bind = SUPER, up, movefocus, u

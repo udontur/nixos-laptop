@@ -14,7 +14,8 @@
     kitty
     firefox
     nautilus
-
+    waybar
+nixfmt-rfc-style
     # Terminal apps
     git
     neofetch
