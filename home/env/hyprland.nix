@@ -21,7 +21,7 @@
       bind = SUPER, W, killactive,
       bind = SUPER, Delete, exec, reboot
       bind = SUPER_Control, P, exec, shutdown now
-      bind = SUPER, P, exit
+      #bind = SUPER, P, exit
 
       # Apps
       bind = SUPER, Q, exec, kitty
