@@ -4,122 +4,46 @@
     enable = true;
     style = ''
       * {
-      min-height: 0;
-      min-width: 0;
-      font-family: "Recursive Sans Casual Static";
-      font-size: 16px;
-      font-weight: 600;
-      }
+  min-height: 0;
+  min-width: 0;
+  font-family: "Recursive Sans Casual Static";
+  font-size: 14px;
+  font-weight: 600;
+}
 
-      window#waybar {
-      transition-property: background-color;
-      transition-duration: 0.5s;
-      /* background-color: #1e1e2e; */
-      /* background-color: #181825; */
-      background-color: #11111b;
-      /* background-color: rgba(24, 24, 37, 0.6); */
-      }
+#waybar {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  background-color: #000000;
+}
 
-      #workspaces button {
-      padding: 0.3rem 0.6rem;
-      margin: 0.4rem 0.25rem;
-      border-radius: 6px;
-      /* background-color: #181825; */
-      background-color: #1e1e2e;
-      color: #cdd6f4;
-      }
+#workspaces button {
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 6px;
+  color: #a9a9a9;
+  background-color: #222222;
+}
 
-      #workspaces button:hover {
-      color: #1e1e2e;
-      background-color: #cdd6f4;
-      }
+#clock,
+#pulseaudio,
+#custom-notification,
+#cpu,
+#memory,
+#window,
+#battery {
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 6px;
+  color: #a9a9a9;
+  background-color: #222222;
+}
 
-      #workspaces button.active {
-      background-color: #1e1e2e;
-      color: #89b4fa;
-      }
-
-      #workspaces button.urgent {
-      background-color: #1e1e2e;
-      color: #f38ba8;
-      }
-
-      #clock,
-      #pulseaudio,
-      #custom-logo,
-      #custom-power,
-      #custom-spotify,
-      #custom-notification,
-      #cpu,
-      #tray,
-      #memory,
-      #window,
-      #mpris {
-      padding: 0.3rem 0.6rem;
-      margin: 0.4rem 0.25rem;
-      border-radius: 6px;
-      /* background-color: #181825; */
-      background-color: #1e1e2e;
-      }
-
-      #mpris.playing {
-      color: #a6e3a1;
-      }
-
-      #mpris.paused {
-      color: #9399b2;
-      }
-
-      #custom-sep {
-      padding: 0px;
-      color: #585b70;
-      }
-
-      window#waybar.empty #window {
-      background-color: transparent;
-      }
-
-      #cpu {
-      color: #94e2d5;
-      }
-
-      #memory {
-      color: #cba6f7;
-      }
-
-      #clock {
-      color: #74c7ec;
-      }
-
-      #clock.simpleclock {
-      color: #89b4fa;
-      }
-
-      #window {
-      color: #cdd6f4;
-      }
-
-      #pulseaudio {
-      color: #b4befe;
-      }
-
-      #pulseaudio.muted {
-      color: #a6adc8;
-      }
-
-      #custom-logo {
-      color: #89b4fa;
-      }
-
-      tooltip {
-      background-color: #181825;
-      border: 2px solid #89b4fa;
-      }
     '';
     settings = [{
       layer = "bottom";
       position = "top";
-      height = 40;
+      height = 30;
       spacing = 2;
       exclusive=true;
       gtk-layer-shell= true;
@@ -135,8 +59,8 @@
         "cpu"
         "memory"
         "pulseaudio"
-        "custom/notification"
         "battery"
+        "custom/notification"
       ];
       "hyprland/workspaces" = {
         on-click = "activate";
@@ -147,7 +71,7 @@
       };
       clock = {
         tooltip = false;
-        format = "{%H:%M %a %d %b}";
+        format = "{:%H:%M %a %d %b}";
       };
       cpu = {
         format = " {usage}%";
@@ -155,7 +79,7 @@
         interval = 3;
       };
       memory = {
-        format = " {used:0.1f}Gi";
+        format = "{used:0.1f}GB";
         interval = 3;
       };
       pulseaudio = {
@@ -169,7 +93,6 @@
             " "
           ];
         };
-        on-click = "pavucontrol";
       };
       "custom/notification" = {
         escape = true;
@@ -177,8 +100,8 @@
         exec-if = "which swaync-client";
         format = "{icon}";
         format-icons = {
-          none = "󰅺";
-          notification = "󰡟";
+          none = "✔";
+          notification = "!";
         };
         on-click = "sleep 0.1 && swaync-client -t -sw";
         return-type = "json";

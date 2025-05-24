@@ -25,12 +25,13 @@
       # Apps
       bind = SUPER, Q, exec, kitty
       bind = SUPER, E, exec, nautilus
-      bind = SUPER, F, exec, firefox
+      bind = SUPER, F, exec, zen
+      bind = SUPER_Shift, F, exec, firefox
       bindl = ,switch:Lid Switch, exec, hyprlock
       bind = SUPER, L, exec, hyprlock
       bind = SUPER, S, exec, hyprshot -m region output -z --clipboard-only
       bind = SUPER_Shift, S, exec, hyprshot -m -z region
-      bindr = SUPER, B, exec, pkill btop || kitty --title btop -e btop
+      #bindr = SUPER, B, exec, pkill btop || kitty --title btop -e btop
 
       # Windows and Workspace
       bind = SUPER, O, exec, hyprnome

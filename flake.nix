@@ -9,9 +9,10 @@
     };
     hyprland.url="github:hyprwm/Hyprland"; 
     ossdmk.url="github:udontur/ossdmk";  
+    zen-browser.url = "github:0xc000022070/zen-browser-flake";
   };
 
-  outputs = { self, nixpkgs, home-manager, hyprland, ... }@inputs: 
+  outputs = { self, nixpkgs, home-manager, hyprland, zen-browser, ... }@inputs: 
   let
     system="x86_64-linux";
     pkgs=nixpkgs.legacyPackages.${system};

@@ -16,6 +16,8 @@
     nautilus
     waybar
     nixfmt-rfc-style
+    inputs.zen-browser.packages."${system}".beta
+
     # Terminal apps
     git
     neofetch
