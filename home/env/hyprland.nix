@@ -64,10 +64,10 @@ bind = ,XF86MonBrightnessDown, exec, swayosd-client --brightness -1
       # Launch
       exec-once = hyprpaper
       exec-once = swayosd-server
-      exec-once = firefox
       exec-once = swaync
       exec-once = hyprctl setcursor Bibata-Modern-Ice 25
       exec-once = waybar
+      exec-once = zen
 
       # Environment Variables
       env = XCURSOR_THEME, Bibata-Modern-Ice
