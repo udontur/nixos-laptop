@@ -6,7 +6,7 @@
       * {
       min-height: 0;
       min-width: 0;
-      font-family: Lexend, "JetBrainsMono NFP";
+      font-family: "Recursive Sans Casual Static";
       font-size: 16px;
       font-weight: 600;
       }
@@ -127,19 +127,16 @@
       passthrough = false;
       modules-left = [
         "hyprland/workspaces"
-        "hyprland/window"
       ];
       modules-center = [
         "clock"
-        "clock#simpleclock"
       ];
       modules-right = [
         "cpu"
         "memory"
         "pulseaudio"
-        "tray"
         "custom/notification"
-        "custom/power"
+        "battery"
       ];
       "hyprland/workspaces" = {
         on-click = "activate";
@@ -148,40 +145,18 @@
         disable-scroll = false;
         active-only = false;
       };
-      "hyprland/window" = {
-        format = "{title}";
-      };
-      tray = {
-        show-passive-items = true;
-        spacing = 10;
-      };
-      "clock#simpleclock" = {
-        tooltip = false;
-        format = " {:%H:%M}";
-      };
       clock = {
-        format = " {:L%a %d %b}";
-        calendar = {
-          format = {
-            days = "<span weight='normal'>{}</span>";
-            months = "<span color='#cdd6f4'><b>{}</b></span>";
-            today = "<span color='#f38ba8' weight='700'><u>{}</u></span>";
-            weekdays = "<span color='#f9e2af'><b>{}</b></span>";
-            weeks = "<span color='#a6e3a1'><b>W{}</b></span>";
-          };
-          mode = "month";
-          mode-mon-col = 1;
-          on-scroll = 1;
-        };
-        tooltip-format = "<span color='#cdd6f4' font='Lexend 16'><tt><small>{calendar}</small></tt></span>";
+        tooltip = false;
+        format = "{%H:%M %a %d %b}";
       };
       cpu = {
         format = " {usage}%";
         tooltip = true;
-        interval = 1;
+        interval = 3;
       };
       memory = {
         format = " {used:0.1f}Gi";
+        interval = 3;
       };
       pulseaudio = {
         format = "{icon} {volume}%";
@@ -196,10 +171,6 @@
         };
         on-click = "pavucontrol";
       };
-      "custom/sep" = {
-        format = "|";
-        tooltip = false;
-      };
       "custom/notification" = {
         escape = true;
         exec = "swaync-client -swb";
@@ -212,6 +183,11 @@
         on-click = "sleep 0.1 && swaync-client -t -sw";
         return-type = "json";
         tooltip = false;
+      };
+      battery= {
+        format= "{icon} {capacity}%";
+        format-icons= ["" "" "" "" ""];
+        interval=30;
       };
     }];
   };

@@ -21,5 +21,6 @@
     jetbrains-mono
     recursive
     nerdfix
+    font-awesome
    ];
 }
