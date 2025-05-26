@@ -12,19 +12,15 @@
   environment.systemPackages = with pkgs; [
     # GUI apps
     kitty
-    firefox
     nautilus
     waybar
-    nixfmt-rfc-style
     inputs.zen-browser.packages."${system}".beta
 
     # Terminal apps
     git
     neofetch
     btop
-    inputs.ossdmk.default
-    zip
-    unzip
     tt
+    inputs.ossdmk.default
   ];
 }

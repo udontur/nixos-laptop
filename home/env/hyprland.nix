@@ -3,7 +3,7 @@
   home.packages = with pkgs; [
     # declare by apps
     hyprpaper
-    mako
+    swayosd
     swaynotificationcenter
     hyprland
     hyprcursor
