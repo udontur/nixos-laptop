@@ -32,6 +32,7 @@
       bind = SUPER, S, exec, hyprshot -m region output -z --clipboard-only
       bind = SUPER_Shift, S, exec, hyprshot -m -z region
       bind = SUPER, V, exec, code
+      bind = SUPER, U, exec, osu!
       #bindr = SUPER, B, exec, pkill btop || kitty --title btop -e btop
 
       # Windows and Workspace
@@ -67,7 +68,7 @@
       # Launch
       exec-once = hyprpaper
       exec-once = swayosd-server
-      exec-once = mako
+      exec-once = swaync
       exec-once = hyprctl setcursor Bibata-Modern-Ice 25
       exec-once = waybar
       exec-once = zen

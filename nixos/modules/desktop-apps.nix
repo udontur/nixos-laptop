@@ -15,7 +15,7 @@
     nautilus
     waybar
     inputs.zen-browser.packages."${system}".beta
-
+    osu-lazer
     # Terminal apps
     git
     neofetch
