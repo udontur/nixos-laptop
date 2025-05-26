@@ -31,6 +31,7 @@
       bind = SUPER, L, exec, hyprlock
       bind = SUPER, S, exec, hyprshot -m region output -z --clipboard-only
       bind = SUPER_Shift, S, exec, hyprshot -m -z region
+      bind = SUPER, V, exec, code
       #bindr = SUPER, B, exec, pkill btop || kitty --title btop -e btop
 
       # Windows and Workspace

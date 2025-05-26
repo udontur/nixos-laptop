@@ -11,6 +11,7 @@
     ./apps/btop.nix
     ./apps/hyprlock.nix
     ./apps/waybar.nix
+    ./apps/vscode.nix
   ];
 
   dconf.settings = {
