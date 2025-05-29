@@ -25,6 +25,14 @@
   background-color: #222222;
 }
 
+#workspaces button.active {
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 6px;
+  color: #a9a9a9;
+  background-color: #3c3c3c;
+}
+
 #clock,
 #pulseaudio,
 #custom-notification,
