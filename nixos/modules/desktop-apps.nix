@@ -22,5 +22,6 @@
     btop
     tt
     inputs.ossdmk.default
+    hyprpaper
   ];
 }

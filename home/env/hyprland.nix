@@ -2,7 +2,7 @@
 {
   home.packages = with pkgs; [
     # declare by apps
-    hyprpaper
+    #hyprpaper
     swayosd
     swaynotificationcenter
     hyprland

@@ -12,6 +12,7 @@
     ./apps/hyprlock.nix
     ./apps/waybar.nix
     ./apps/vscode.nix
+    ./env/hyprpaper.nix
   ];
 
   dconf.settings = {
