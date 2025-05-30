@@ -14,7 +14,7 @@
 #waybar {
   transition-property: background-color;
   transition-duration: 0.5s;
-  background-color: #000000;
+  background-color: transparent;
 }
 
 #workspaces button {
