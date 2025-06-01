@@ -16,12 +16,14 @@
     waybar
     inputs.zen-browser.packages."${system}".beta
     osu-lazer
-    # Terminal apps
+
+    # Utils and Terminal apps
     git
     neofetch
     btop
     tt
     inputs.ossdmk.default
     hyprpaper
+    inputs.hyprshot.packages."${system}".default
   ];
 }

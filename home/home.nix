@@ -42,8 +42,9 @@
         gtk-cursor-theme-name = "Bibata Modern Ice"
       '';
     };
-
+    
   };
+  dconf.settings."org/gnome/desktop/wm/preferences".button-layout = "";
   # Wayland, X, etc. support for session vars
   # systemd.user.sessionVariables = config.home-manager.users.udontur.home.sessionVariables;
 

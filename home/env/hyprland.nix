@@ -2,12 +2,12 @@
 {
   home.packages = with pkgs; [
     # declare by apps
-    #hyprpaper
+    # hyprpaper
+    # hyprshot (my own flake)
     swayosd
     swaynotificationcenter
     hyprland
     hyprcursor
-    hyprshot
     hyprlock
     hyprnome
     xdg-desktop-portal-hyprland
@@ -29,7 +29,7 @@
       bind = SUPER_Shift, F, exec, firefox
       bindl = ,switch:Lid Switch, exec, hyprlock
       bind = SUPER, L, exec, hyprlock
-      bind = SUPER, S, exec, hyprshot -m region output -z --clipboard-only
+      bind = SUPER, S, exec, hyprshot -m region -z --clipboard-only
       bind = SUPER_Shift, S, exec, hyprshot -m -z region
       bind = SUPER, V, exec, code
       bind = SUPER, U, exec, osu!

@@ -10,6 +10,7 @@
     hyprland.url="github:hyprwm/Hyprland"; 
     ossdmk.url="github:udontur/ossdmk";  
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
+    hyprshot.url = "github:udontur/hyprshot";
   };
 
   outputs = { self, nixpkgs, home-manager, hyprland, zen-browser, ... }@inputs: 

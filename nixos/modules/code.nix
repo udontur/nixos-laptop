@@ -31,5 +31,10 @@
     nixpkgs-hammering
     nixpkgs-fmt
     nixfmt-rfc-style
+
+    # Others
+    slurp
+    grim
+    libnotify
   ];
 }
