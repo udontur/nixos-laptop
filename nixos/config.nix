@@ -12,6 +12,7 @@
   imports = [
     /etc/nixos/hardware-configuration.nix
     inputs.home-manager.nixosModules.home-manager
+    ./modules/code.nix
     ./modules/enable.nix
     ./modules/resource.nix
     ./modules/system.nix

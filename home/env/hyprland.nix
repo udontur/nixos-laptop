@@ -93,9 +93,6 @@
       windowrulev2 = nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0
      # windowrulev2 = rounding 16, floating:1
 
-      layerrule = noanim, hyprpicker
-      layerrule = noanim, selection 
-
       #workspace = w[tv1], gapsout:0, gapsin:0
       #workspace = f[1], gapsout:0, gapsin:0
       #windowrulev2 = bordersize 0, floating:0, onworkspace:f[1]
