@@ -39,6 +39,7 @@
 #cpu,
 #memory,
 #window,
+#network,
 #battery {
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
@@ -68,7 +69,7 @@
         "memory"
         "pulseaudio"
         "battery"
-        "custom/notification"
+        "network"
       ];
       "hyprland/workspaces" = {
         on-click = "activate";
@@ -102,18 +103,10 @@
           ];
         };
       };
-      "custom/notification" = {
-        escape = true;
-        exec = "swaync-client -swb";
-        exec-if = "which swaync-client";
-        format = "{icon}";
-        format-icons = {
-          none = "✔";
-          notification = "!";
-        };
-        on-click = "sleep 0.1 && swaync-client -t -sw";
-        return-type = "json";
-        tooltip = false;
+      "network"={
+        rotete=0;
+        format="󰇚 {bandwidthDownBytes}";
+        interval=1;
       };
       battery= {
         format= "{icon} {capacity}%";

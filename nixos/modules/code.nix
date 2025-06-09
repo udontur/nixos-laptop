@@ -36,6 +36,6 @@
     slurp
     grim
     libnotify
-    wl-clipboard
+    
   ];
 }

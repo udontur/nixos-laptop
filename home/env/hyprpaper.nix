@@ -8,4 +8,9 @@
         wallpaper=[", ~/.config/hypr/wallpaper.jpg"];
     };
   };
+  home.file={
+    "/home/udontur/.config/hypr/wallpaper.jpg"={
+      source=./assets/wallpaper.jpg;
+    };
+  };
 }

@@ -1,8 +1,7 @@
 { pkgs, config, ... }:
 {
   home.packages = with pkgs; [
-    # declare by apps
-    # hyprpaper
+    hyprpaper
     # hyprshot (my own flake)
     swayosd
     swaynotificationcenter
@@ -13,6 +12,8 @@
     xdg-desktop-portal-hyprland
     hyprpolkitagent
     brightnessctl
+    waybar
+    wl-clipboard
   ];
   wayland.windowManager.hyprland = {
     enable = true;
@@ -34,6 +35,7 @@
       bind = SUPER, V, exec, code
       bind = SUPER, U, exec, osu!
       #bindr = SUPER, B, exec, pkill btop || kitty --title btop -e btop
+      bind = SUPER, C, exec, chromium
 
       # Windows and Workspace
       bind = SUPER, O, exec, hyprnome
@@ -70,6 +72,7 @@
       exec-once = swayosd-server
       exec-once = swaync
       exec-once = hyprctl setcursor Bibata-Modern-Ice 25
+      exec-once = systemctl --user start hyprpolkitagent
       exec-once = waybar
       exec-once = zen
 

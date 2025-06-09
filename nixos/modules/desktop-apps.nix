@@ -13,17 +13,18 @@
     # GUI apps
     kitty
     nautilus
-    waybar
     inputs.zen-browser.packages."${system}".beta
-    osu-lazer
-
+    obsidian
+    
     # Utils and Terminal apps
     git
     neofetch
     btop
-    tt
-    inputs.ossdmk.default
-    hyprpaper
+    gdu
+    # inputs.ossdmk."${system}".default
     inputs.hyprshot.packages."${system}".default
+
+    # Temporary
+    # chromium
   ];
 }
